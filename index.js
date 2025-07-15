@@ -276,3 +276,25 @@ function greeting2(time) {
 // greeting2(6);
 // greetings(6);
 
+
+// countdown timer
+// create a function to count down from 100 - 0;
+
+
+function timer(){
+    for(i=100;i>0;i--){
+        console.log(i);
+    }
+}
+// timer()
+
+
+
+function even(){
+    for(i=100;i>0;i--){
+        if(i%2 === 0){
+            console.log(i, " is an even number");
+        }
+    }
+}
+even();
