@@ -25,18 +25,18 @@
 
 // // // variable declaration and initialization
 
-// // var a ; // variable declaration
+// var a ; // variable declaration
 
-// // a = 190 // variable initialization
+// a = 190 // variable initialization
 
-// // var b = 100 // variable initialization
+// var b = 100 // variable initialization
 
-// // var a = true; // boolean
+// var a = true; // boolean
 
-// // a = 1000;
+// a = 1000;
 
-// // c =false;
-// //  console.log(a,b,c);
+// c =false;
+//  console.log(a,b,c);
 
 // // types of storages or variables
 
@@ -183,13 +183,11 @@
 //   }
 // }
 
-
 // // for (i = 8; i > 4; i-= 3) {
 // //   console.log(i);
 // // }
 
-
-// // loop starts from 2 -> (excluding)10 and reverse it 
+// // loop starts from 2 -> (excluding)10 and reverse it
 // // now start from 8 while reversing it?
 // // skip 3 on each iteration?
 // // print "the number I am iterating is: " + val on every iteration
@@ -199,13 +197,82 @@
 // }
 // for(j=8;j>=2;j-=3){
 // console.log("the number I am iterating is"  + "=" , j);
-    
+
 // }
 
+// function code1 (){
+//     console.log("Hi Good Morning");
+//     console.log( "lets have a cup of tea");
+// }
 
-function code1 (){
-    console.log("Hi Good Morning");
-    console.log( "lets have a cup of tea");
+// code1();
+
+// function greeting (){
+//     console.log(new Date().to());
+// }
+
+// greeting();
+
+// function greeting (parameters) {  // declaration
+
+// }
+
+// greeting(arguments); // call
+
+// function greetFunc(val1,val2,val3,val4,val5,val6){
+//     console.log(val1);
+//     console.log(val2);
+//     console.log(val3);
+//     console.log(val4);
+//     console.log(val5);
+//     console.log(val6);
+
+// }
+
+// greetFunc("Hi",0,"good morning","how are you","hope","you are doing well");
+
+function greetings(time) {
+  if (time == 6) {
+    console.log("its " + time + "in the morning");
+  } else if (time == 15) {
+    console.log("its " + time + " in the afternoon");
+  } else if (time == 18) {
+    console.log("its " + time + " in the evening");
+  } else if (time == 21) {
+    console.log("its " + time + " in the night");
+  } else {
+    console.log("invalid time");
+  }
 }
 
-code1();
+// greetings(22);
+
+// greet according to time (24h format)
+// pass arguments, based on those greet accordingly
+// ex 6 -> "good morning!"
+// ex 15 -> "good afternoon!"
+// ex 18 -> "good evening!"
+// ex 21 -> "good night!"
+
+// 1-12 as "good morning!"
+// 13-16 as "good afternoon!"
+// 16-19 as "good evening!"
+// 19-23 as "good night!"
+
+function greeting2(time) {
+  if (time >= 0 && time < 12) {
+    console.log("good morning");
+  } else if (time >= 12 && time < 16) {
+    console.log("good afternoon");
+  } else if (time >= 16 && time < 19) {
+    console.log("good evening");
+  } else if (time >= 19 && time < 24) {
+    console.log("good night");
+  } else {
+    console.log("invalid time");
+  }
+}
+
+// greeting2(6);
+// greetings(6);
+
