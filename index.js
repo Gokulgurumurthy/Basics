@@ -282,7 +282,7 @@ function greeting2(time) {
 
 
 function timer(){
-    for(i=100;i>0;i--){
+    for(i=100;i>0;i-=2){
         console.log(i);
     }
 }
@@ -290,11 +290,144 @@ function timer(){
 
 
 
-function even(){
-    for(i=100;i>0;i--){
-        if(i%2 === 0){
-            console.log(i, " is an even number");
-        }
+// function even(){
+//     for(i=100;i>0;i--){
+//         if(i%2 === 0){
+//             console.log(i, " is an even number");
+//         }
+//     }
+// }
+// even();
+
+
+function greetings5(){
+    console.log("wishing you a very happy bday");
+    console.log("god bless you")
+}
+
+// greetings5()
+
+function greet1(royal){
+    if (royal === 452){
+        console.log("royal enfield " + "=", " its an new himalayan" );
+    } else if(royal === 350){
+        console.log("royal enfield " + "=","its an Meteor or classic")
+    } else {
+        console.log("Not an royal enfield")
     }
 }
-even();
+
+// greet1(350)
+
+
+//arrays and objects
+
+// let arr = [];
+
+// arr = "1,2,3,4,5"
+
+// let obj = {
+// dob:"05/03/2000",
+// name:"G Gokul",
+// Male: true,
+// arr
+// }
+// console.log(arr,obj)
+
+// arr 
+
+// let arr1 = [1, '2', true, undefined, null,  [1, 2, 3, [1, 2, 3, 4]]];
+
+
+
+// let obj = {
+//   dob: "16/03/2000",
+//   name: "hari",
+//   male: true,
+//   age: 25,
+//   happy: () => {
+//     console.log("yes")
+//   },
+//   arr1
+
+// }
+
+// console.log(obj)
+
+// arr = [1, '2', true, undefined, null, obj, [1, 2, 3, [1, 2, 3, 4]]];
+
+
+// console.log(arr);
+
+
+// let obj = {
+//   key: "value",
+// }
+
+
+// let str = "";
+
+// str = "hello";
+
+// console.log(str);
+
+
+
+
+// let alpha = "hello world";
+
+
+// alpha[1] = "v"
+// console.log(alpha)
+
+
+// const str = "hello";
+// str[1] = "h"
+
+// const arr = ["hello", "world", 1,2,3]
+
+
+// arr[0] = "morning";
+
+// console.log(arr)
+// console.log(str)
+
+
+// let a = "hello"; // #116ghha892
+// let b = a; // #117ghha892
+
+// b[0] = "j"
+
+// console.log(a, b)
+
+// let c = [100, 101]; // #116ghha893
+
+// let d = c; // #116ghha893 [100, 101]
+
+// let e = d;
+
+// e[0] = "201" 
+// console.log(c, d)
+
+
+
+function objMutation(str) {
+  return str
+}
+
+
+
+const obj = {
+  name: 'Hari',
+  age:25
+}
+
+
+
+
+// const fnOutput = objMutation("hello") // => obj
+
+console.log(objMutation("hello"))
+
+
+
