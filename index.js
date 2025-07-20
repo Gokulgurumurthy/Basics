@@ -465,17 +465,46 @@ function greet1(royal) {
 // }
 // console.log(timer());
 
-function gokul() {
-  var time;
-  for (i = 1; i < 10; i++) {
-    if (i % 2 != 0) {
-      time = i + 1;
-      console.log(time, 'a')
-    } else {
-      time = i;
-      console.log(time, 'b')
-    }
-  }
-  // return time;
+// function gokul() {
+//   var time;
+//   for (i = 1; i < 10; i++) {
+//     if (i % 2 != 0) {
+//       time = i + 1;
+//       console.log(time, 'a')
+//     } else {
+//       time = i;
+//       console.log(time, 'b')
+//     }
+//   }
+//   // return time;
+// }
+// // console.log(gokul());
+
+//scoped variables
+
+// global scoped
+
+var a = 10;
+let b = 11;
+const c = 12;
+{
+  //block scoped
+  var d =13;
+  let e = 14;
+  const f = 15;
+
+  console.log(a,b,c,d,e,f,"block");
 }
-console.log(gokul());
+
+function hydra(){
+  //function scoped
+  var g = 10;
+  let h = 11;
+  const i = 12;
+//local scope to the function
+  console.log(a,b,c,d,g,h,i,"function");
+}
+
+hydra()
+
+console.log(a,b,c,d,"global");
