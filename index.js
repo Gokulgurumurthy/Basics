@@ -484,27 +484,69 @@ function greet1(royal) {
 
 // global scoped
 
-var a = 10;
-let b = 11;
-const c = 12;
-{
-  //block scoped
-  var d =13;
-  let e = 14;
-  const f = 15;
+// var a = 10;
+// let b = 11;
+// const c = 12;
+// {
+//   //block scoped
+//   var d =13;
+//   let e = 14;
+//   const f = 15;
 
-  console.log(a,b,c,d,e,f,"block");
-}
+//   console.log(a,b,c,d,e,f,"block");
+// }
 
-function hydra(){
-  //function scoped
-  var g = 10;
-  let h = 11;
-  const i = 12;
-//local scope to the function
-  console.log(a,b,c,d,g,h,i,"function");
-}
+// function hydra(){
+//   //function scoped
+//   var g = 10;
+//   let h = 11;
+//   const i = 12;
+// //local scope to the function
+//   console.log(a,b,c,d,g,h,i,"function");
+// }
 
-hydra()
+// hydra()
 
-console.log(a,b,c,d,"global");
+// console.log(a,b,c,d,"global");
+
+//pass by ref and pass by val
+
+//pass by value
+
+// function hail(val){
+//   val+=1;
+//   return val;
+// }
+
+// var a = 1;
+
+// const out = hail(a)
+
+// console.log(out);
+// console.log(a);
+
+var obj1 = {
+  name: "gokul",
+  age: 25,
+  male: false,
+  nestedDetails: {
+    address: "kengeri",
+    country: {
+      India: true,
+    },
+  },
+  code: 560060,
+  arr: [10, 20, 220, 10],
+};
+obj1["name"] = "gurmurthy";
+
+obj1["male"] = !false;
+
+obj1["nestedDetails"].country.India = {
+  nationality: true,Hindu:true
+};
+
+
+obj1["nestedDetails"].country.India=['nationality','hindu',91]
+
+console.log(obj1.nestedDetails.country.India[2]);
