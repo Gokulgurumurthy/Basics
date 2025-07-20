@@ -509,44 +509,56 @@ function greet1(royal) {
 
 // console.log(a,b,c,d,"global");
 
-//pass by ref and pass by val
+// var obj1 = {
+//   name: "gokul",
+//   age: 25,
+//   male: false,
+//   nestedDetails: {
+//     address: "kengeri",
+//     country: {
+//       India: true,
+//     },
+//   },
+//   code: 560060,
+//   arr: [10, 20, 220, 10],
+// };
+// obj1["name"] = "gurmurthy";
+
+// obj1["male"] = !false;
+
+// obj1["nestedDetails"].country.India = {
+//   nationality: true,Hindu:true
+// };
+
+// obj1["nestedDetails"].country.India=['nationality','hindu',91]
+// console.log(obj1.nestedDetails.country.India);
 
 //pass by value
 
-// function hail(val){
-//   val+=1;
-//   return val;
-// }
+function hail(val) {
+  val += 1;
+  return val;
+}
 
-// var a = 1;
+var a = 1;
 
-// const out = hail(a)
+const out = hail(a);
 
-// console.log(out);
-// console.log(a);
+console.log(out);
+console.log(a);
 
-var obj1 = {
-  name: "gokul",
-  age: 25,
-  male: false,
-  nestedDetails: {
-    address: "kengeri",
-    country: {
-      India: true,
-    },
-  },
-  code: 560060,
-  arr: [10, 20, 220, 10],
-};
-obj1["name"] = "gurmurthy";
+//pass by ref
 
-obj1["male"] = !false;
+function hail2(val){
+  val[1]=10;
+  return val;
+}
 
-obj1["nestedDetails"].country.India = {
-  nationality: true,Hindu:true
-};
+var b = [1,2];
+
+const c = hail2(b);
+
+console.log(c);
+console.log(b);
 
 
-obj1["nestedDetails"].country.India=['nationality','hindu',91]
-
-console.log(obj1.nestedDetails.country.India[2]);
