@@ -29,19 +29,19 @@
 
 // greetFunc("Hi",0,"good morning","how are you","hope","you are doing well");
 
-function greetings(time) {
-  if (time == 6) {
-    console.log("its " + time + "in the morning");
-  } else if (time == 15) {
-    console.log("its " + time + " in the afternoon");
-  } else if (time == 18) {
-    console.log("its " + time + " in the evening");
-  } else if (time == 21) {
-    console.log("its " + time + " in the night");
-  } else {
-    console.log("invalid time");
-  }
-}
+// function greetings(time) {
+//   if (time == 6) {
+//     console.log("its " + time + "in the morning");
+//   } else if (time == 15) {
+//     console.log("its " + time + " in the afternoon");
+//   } else if (time == 18) {
+//     console.log("its " + time + " in the evening");
+//   } else if (time == 21) {
+//     console.log("its " + time + " in the night");
+//   } else {
+//     console.log("invalid time");
+//   }
+// }
 
 // greetings(22);
 
