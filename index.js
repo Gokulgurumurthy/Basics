@@ -562,15 +562,25 @@ function greet1(royal) {
 // console.log(b);
 
 
-var obj2 = {
-  name: "gokul",
-  dob: "05032000",
-  male: !false,
-  nestedDetails: {
-    country: { India: true },
-    address: "kengeri",
-    code: 560060,
-  },
-};
-obj2["nestedDetails"].address ={state:"karnataka",city:"bengaluru",taluk:"kengeri"}
-console.log(obj2)
+// var obj2 = {
+//   name: "gokul",
+//   dob: "05032000",
+//   male: !false,
+//   nestedDetails: {
+//     country: { India: true },
+//     address: "kengeri",
+//     code: 560060,
+//   },
+// };
+// obj2["nestedDetails"].address ={state:"karnataka",city:"bengaluru",taluk:"kengeri"}
+// console.log(obj2)
+
+
+function countDown(){
+for(i=10;i>=1;i--){
+  if(i%2==0){
+    console.log(i)
+  }
+}}
+
+countDown()
