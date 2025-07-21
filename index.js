@@ -535,30 +535,42 @@ function greet1(royal) {
 
 //pass by value
 
-function hail(val) {
-  val += 1;
-  return val;
-}
+// function hail(val) {
+//   val += 1;
+//   return val;
+// }
 
-var a = 1;
+// var a = 1;
 
-const out = hail(a);
+// const out = hail(a);
 
-console.log(out);
-console.log(a);
+// console.log(out);
+// console.log(a);
 
 //pass by ref
 
-function hail2(val){
-  val[1]=10;
-  return val;
-}
+// function hail2(val){
+//   val[1]=10;
+//   return val;
+// }
 
-var b = [1,2];
+// var b = [1,2];
 
-const c = hail2(b);
+// const c = hail2(b);
 
-console.log(c);
-console.log(b);
+// console.log(c);
+// console.log(b);
 
 
+var obj2 = {
+  name: "gokul",
+  dob: "05032000",
+  male: !false,
+  nestedDetails: {
+    country: { India: true },
+    address: "kengeri",
+    code: 560060,
+  },
+};
+obj2["nestedDetails"].address ={state:"karnataka",city:"bengaluru",taluk:"kengeri"}
+console.log(obj2)
