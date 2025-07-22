@@ -542,9 +542,9 @@ function greet1(royal) {
 
 // var a = 1;
 
-// const out = hail(a);
+// const outV = hail(a);
 
-// console.log(out);
+// console.log(outV);
 // console.log(a);
 
 //pass by ref
@@ -561,6 +561,26 @@ function greet1(royal) {
 // console.log(c);
 // console.log(b);
 
+// function countDown(){
+// for(i=10;i>=1;i--){
+//   if(i%2==0){
+//     console.log(i)
+//   }
+// }}
+
+// countDown()
+
+// function hail3(obj2) {
+//   obj2["nestedDetails"].address = {
+//     state: "karnataka",
+//     city: "bengaluru",
+//     taluk: "kengeri",
+//   };
+//   return obj2;
+// }
+
+
+
 
 // var obj2 = {
 //   name: "gokul",
@@ -572,15 +592,143 @@ function greet1(royal) {
 //     code: 560060,
 //   },
 // };
-// obj2["nestedDetails"].address ={state:"karnataka",city:"bengaluru",taluk:"kengeri"}
-// console.log(obj2)
+// let out = hail3(obj2);
+
+// console.log(obj2, "here");
+// console.log(out);
+
+// function hail4(val){
+//  val="gokul"
+//  return val 
+// }
+// var b = "gurumurthy"
+// let fN = hail4(b)
+// console.log(hail4(fN))
+// console.log(b);
+
+// function gM(tM){
+//   tM = 2
+//   return tM
+// }
+// const a = 3
+// const b = gM(a)
+
+// console.log(a);
+// console.log(b);
+
+// function rE(kE){
+//   kE = "royal"
+//   return kE
+// }
+//  const c = "enfield"
+//  const d = rE(c)
+
+//  console.log(c);
+//  console.log(d);
+ 
+
+//  function hR(mN){
+//   mN [2] = 5
+//   mN [1] = 2
+//   return mN
+//  }
+//  const e = [0,1,2,3,4,5,6]
+//  const f = hR(e)
+
+//  console.log(e);
+//  console.log(f);
+ 
+
+//  function gK(leo){
+//   leo["name"]= "RE"
+//   return leo
+//  }
+//   leo = {
+//     name: "royal enfield",
+//     establshed: "1947",
+//     nestedDetails:{
+//       brand: "himalayan",
+//       cc:"452"
+//     }
+//   }
+  
+//   let im = gK(leo)
+
+//   console.log(im,'x');
+// console.log(leo);
 
 
-function countDown(){
-for(i=10;i>=1;i--){
-  if(i%2==0){
-    console.log(i)
+function sum(a,b){
+  const out = a+b
+  return out
+}
+
+const a = 10
+const b = 2
+ 
+// console.log(sum(a,b))
+  
+function div(a,b){
+const out = a/b
+return out
+}
+
+
+// console.log(div(a,b))
+  
+function mult(a,b){
+  const out = a*b
+  return out
+}
+
+// console.log(mult(a,b));
+
+function sub(a,b){
+  const out = a-b 
+  return out
+}
+// console.log(sub(a,b));
+
+
+// function arithematicOperations(operator,value1,value2){
+//   let out = 0;
+//   if(operator === "+"){
+//     out = value1 + value2
+//   }else if (operator === "-"){
+//     out = value1 - value2
+//   }else if (operator === "/"){
+//     out = value1 / value2
+//   }else if (operator === "*"){
+//     out = value1 * value2
+//   }
+
+//   return 'assign right operator';
+// }
+
+
+
+// console.log(arithematicOperations('+',10,2))
+
+
+
+function arithematicOperations(operator,value1,value2){
+  let out = 0;
+  if(operator === "+"){
+    out = sum(value1, value2)
+  }else if (operator === "-"){
+    out = sub(value1,value2)
+  }else if (operator === "/"){
+    out = mult(value1 , value2)
+  }else if (operator === "*"){
+    out = div(value1 , value2)
   }
-}}
 
-countDown()
+  return out;
+}
+
+
+
+console.log(arithematicOperations('-',10,2))
+
+
+
