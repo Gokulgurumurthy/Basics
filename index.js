@@ -561,7 +561,6 @@ function greet1(royal) {
 // console.log(c);
 // console.log(b);
 
-
 // var obj2 = {
 //   name: "gokul",
 //   dob: "05032000",
@@ -575,12 +574,87 @@ function greet1(royal) {
 // obj2["nestedDetails"].address ={state:"karnataka",city:"bengaluru",taluk:"kengeri"}
 // console.log(obj2)
 
+// function countDown(){
+// for(i=10;i>=1;i--){
+//   if(i%2==0){
+//     console.log(i)
+//   }
+// }}
 
-function countDown(){
-for(i=10;i>=1;i--){
-  if(i%2==0){
-    console.log(i)
+// countDown()
+
+function sum(a, b) {
+  const out = a + b;
+  return out;
+}
+const a = 5;
+const b = 5;
+
+console.log(sum(a, b));
+
+function mult(a, b) {
+  const out = a * b;
+  return out;
+}
+
+console.log(mult(a, b));
+
+function sub(a, b) {
+  const out = a - b;
+  return out;
+}
+
+console.log(sub(a, b));
+
+function div(a, b) {
+  const out = a / b;
+  return out;
+}
+
+console.log(div(a, b));
+
+// function arithematicOperations(operator, value1, value2) {
+//   let out = 0;
+//   if (operator === "+") {
+//     out = value1 + value2;
+//   } else if (operator === "-") {
+//     out = value1 - value2;
+//   } else if (operator === "/") {
+//     out = value1 / value2;
+//   } else if (operator === "*") {
+//     out = value1 * value2;
+//   } else {
+//     out = "assign right operstor";
+//   }
+//   return `result: ${out}`;
+// }
+
+function arithematicOperations(operator, value1, value2) {
+  if (operator === "+") {
+    return `Result: ${value1 + value2}`; //string litersl 
+  } else if (operator === "-") {
+    return `result : ${value1 - value2}`;
+  } else if (operator === "/") {
+    return value1 / value2;
+  } else if (operator === "*") {
+    return value1 * value2;
   }
-}}
+  return "assign right operator";
+}
 
-countDown()
+console.log(arithematicOperations("-", 5, 5));
+
+function evenNumber(value) {
+  for (i = 1; i <= 100; i++)
+    if (i % 2 == 0) {
+      console.log(i);
+    }
+}
+
+// console.log(evenNumber())
+
+function oddNumber() {
+  for (i = 1; i <= 10; i++) if (i % 2 != 0) console.log(i);
+}
+
+console.log(oddNumber());
