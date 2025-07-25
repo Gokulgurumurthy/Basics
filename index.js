@@ -826,3 +826,19 @@
 // console.log(evenOdd(5));
 
 
+function pal(str){
+    let emptyStr = "";
+    for(let i=str.length-1;i>=0;i--){
+        emptyStr+=str[i];
+    }
+    
+        if(emptyStr===str){
+            return "its an palindrome"
+        }
+        return "not a palindrome"
+    }
+
+
+console.log(pal("nitin"));
+
+
