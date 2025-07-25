@@ -579,9 +579,6 @@
 // //   return obj2;
 // // }
 
-
-
-
 // // var obj2 = {
 // //   name: "gokul",
 // //   dob: "05032000",
@@ -599,7 +596,7 @@
 
 // // function hail4(val){
 // //  val="gokul"
-// //  return val 
+// //  return val
 // // }
 // // var b = "gurumurthy"
 // // let fN = hail4(b)
@@ -625,7 +622,6 @@
 
 // //  console.log(c);
 // //  console.log(d);
- 
 
 // //  function hR(mN){
 // //   mN [2] = 5
@@ -637,7 +633,6 @@
 
 // //  console.log(e);
 // //  console.log(f);
- 
 
 // //  function gK(leo){
 // //   leo["name"]= "RE"
@@ -651,7 +646,7 @@
 // //       cc:"452"
 // //     }
 // //   }
-  
+
 // //   let im = gK(leo)
 
 // //   console.log(im,'x');
@@ -714,7 +709,7 @@
 
 // function arithematicOperations(operator, value1, value2) {
 //   if (operator === "+") {
-//     return `Result: ${value1 + value2}`; //string litersl 
+//     return `Result: ${value1 + value2}`; //string litersl
 //   } else if (operator === "-") {
 //     return `result : ${value1 - value2}`;
 //   } else if (operator === "/") {
@@ -742,9 +737,6 @@
 
 // console.log(oddNumber());
 
-
-
-
 // function sum(a,b){
 //   const out = a+b
 //   return out
@@ -752,17 +744,16 @@
 
 // const a = 10
 // const b = 2
- 
+
 // // console.log(sum(a,b))
-  
+
 // function div(a,b){
 // const out = a/b
 // return out
 // }
 
-
 // // console.log(div(a,b))
-  
+
 // function mult(a,b){
 //   const out = a*b
 //   return out
@@ -771,11 +762,10 @@
 // // console.log(mult(a,b));
 
 // function sub(a,b){
-//   const out = a-b 
+//   const out = a-b
 //   return out
 // }
 // // console.log(sub(a,b));
-
 
 // // function arithematicOperations(operator,value1,value2){
 // //   let out = 0;
@@ -792,11 +782,7 @@
 // //   return 'assign right operator';
 // // }
 
-
-
 // // console.log(arithematicOperations('+',10,2))
-
-
 
 // function arithematicOperations(operator,value1,value2){
 //   let out = 0;
@@ -813,11 +799,7 @@
 //   return out;
 // }
 
-
-
 // console.log(arithematicOperations('-',10,2))
-
-
 
 // function evenOdd(num){
 //   if(num%2 === 0) return "even";
@@ -825,20 +807,27 @@
 // }
 // console.log(evenOdd(5));
 
+// function pal(str){
+//     let emptyStr = "";
+//     for(let i=str.length-1;i>=0;i--){
+//         emptyStr+=str[i];
+//     }
 
-function pal(str){
-    let emptyStr = "";
-    for(let i=str.length-1;i>=0;i--){
-        emptyStr+=str[i];
-    }
+//         if(emptyStr===str){
+//             return "its an palindrome"
+//         }
+//         return "not a palindrome"
+//     }
+
+// console.log(pal("nitin"));
+
+function naturalSum(value) {
+  let out = 0;
+  for (let i = 1; i <= value; i++) {
+    // out += i;
+    console.log(out += i, out ,i);
     
-        if(emptyStr===str){
-            return "its an palindrome"
-        }
-        return "not a palindrome"
-    }
-
-
-console.log(pal("nitin"));
-
-
+  }
+  return out;
+}
+console.log(naturalSum(10))
