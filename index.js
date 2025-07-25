@@ -549,17 +549,17 @@
 
 // //pass by ref
 
-// // function hail2(val){
-// //   val[1]=10;
-// //   return val;
-// // }
+// function hail2(val){
+//   val[1]=10;
+//   return val;
+// }
 
-// // var b = [1,2];
+// var b = [1,2];
 
-// // const c = hail2(b);
+// const c = hail2(b);
 
-// // console.log(c);
-// // console.log(b);
+// console.log(c);
+// console.log(b);
 
 // // function countDown(){
 // // for(i=10;i>=1;i--){
@@ -836,8 +836,8 @@
 //         // console.log(str[i],i)
 //         bS+=str[i]
 //     }
-//     return bS ;    
-    
+//     return bS ;
+
 // }
 
 // console.log(rev("dollar"))
@@ -848,9 +848,74 @@
 // }
 // console.log(maxEvenNumber(1315));
 
+// function maxOddNumber(val){
+//     if(val%2 === 0) return val - 1;
+//     if(val%2 !== 0) return val;
+// }
+// console.log(maxOddNumber(12));
 
-function maxOddNumber(val){
-    if(val%2 === 0) return val - 1;
-    if(val%2 !== 0) return val;
+// function minEvenNumber(val) {
+//   let out = 0;
+
+//   for (let i = val; i >= 2; i -= 2) {
+//     out = i;
+//   }
+
+//   if (val % 2 !== 0) {
+//     for (let i = val - 1; i >= 2; i -= 2) {
+//       out = i;
+//     }
+//   }
+
+//   // if(val > 2){
+//   //     return 2
+//   // }else if(val < 2){
+//   //     return false
+//   // }
+
+//   return out;
+// }
+// // console.log(minEvenNumber(25));
+
+// function minOddNumber(val) {
+//   let out = 0;
+//   for (let i = val - 1; i >= 1; i -= 2) {
+//     out = i;
+//   }
+//   if (val % 2 !== 0) {
+//     for (let i = val; i >= 1; i -= 2) {
+//       out = i;
+//     }
+//   }
+//   return out;
+// }
+// // console.log(minOddNumber(13));
+
+// function sumOdOdd(val) {
+//   let out = 0;
+//   for (i = 1; i <= val; i += 2) {
+//     // console.log(out += i,i)
+//     out += i;
+//   }
+//   return out;
+// }
+
+// // console.log(sumOdOdd(10));
+
+function sumOfEven(val) {
+  let out = 0;
+  for (i = 2; i <= val; i += 2) {
+    // console.log(out += i,i)
+    out += i;
+  }
+  return out;
 }
-console.log(maxOddNumber(12));
+console.log(sumOfEven(10));
+
+function findIndexVal(str, index) {
+  out = '';
+
+  out = str[index];
+  return out;
+}
+console.log(findIndexVal("gokul", 3));
