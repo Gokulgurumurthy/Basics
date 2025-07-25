@@ -821,13 +821,36 @@
 
 // console.log(pal("nitin"));
 
-function naturalSum(value) {
-  let out = 0;
-  for (let i = 1; i <= value; i++) {
-    // out += i;
-    console.log(out += i, out ,i);
+// function naturalSum(value) {
+//   let out = 0;
+//   for (let i = 1; i <= value; i++) {
+//     out += i;
+//   }
+//   return out;
+// }
+// console.log(naturalSum(10))
+
+// function rev(str){
+//     let bS = ""
+//     for(let i=str.length-1 ;i>=0;i--){
+//         // console.log(str[i],i)
+//         bS+=str[i]
+//     }
+//     return bS ;    
     
-  }
-  return out;
+// }
+
+// console.log(rev("dollar"))
+
+// function maxEvenNumber(val){
+//     if(val%2 === 0) return val;
+//     if(val%2 !== 0) return val - 1;
+// }
+// console.log(maxEvenNumber(1315));
+
+
+function maxOddNumber(val){
+    if(val%2 === 0) return val - 1;
+    if(val%2 !== 0) return val;
 }
-console.log(naturalSum(10))
+console.log(maxOddNumber(12));
