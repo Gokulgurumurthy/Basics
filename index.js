@@ -910,12 +910,34 @@ function sumOfEven(val) {
   }
   return out;
 }
-console.log(sumOfEven(10));
+// console.log(sumOfEven(10));
 
 function findIndexVal(str, index) {
-  out = '';
-
+  out = "";
   out = str[index];
   return out;
 }
-console.log(findIndexVal("gokul", 3));
+// console.log(findIndexVal("gokul", 3));
+
+
+
+
+
+
+let array = [2,3,4,false, undefined, sumOfEven,findIndexVal];
+
+
+let obj = {
+  array,
+  findIndexVal
+}
+// console.log(obj.array[4]);
+obj.array[4]=null
+
+// console.log(sumOfEven(10))
+console.log(obj.array[6]("hari",1));
+console.log(obj.findIndexVal("hari",2));
+
+
+
+
