@@ -935,9 +935,27 @@ let obj = {
 obj.array[4]=null
 
 // console.log(sumOfEven(10))
-console.log(obj.array[6]("hari",1));
-console.log(obj.findIndexVal("hari",2));
+// console.log(obj.array[6]("hari",1));
+// console.log(obj.findIndexVal("hari",2));
 
 
 
+// const obj = {
+//     fullName: "Harikalyan",
+//     age: 25,
+//     address: 'kengeri',
+//     arrEle: [1,2,3,'India', true, undefined, null],
+//     obj: {
+//         upanagar: true
+//     }
+// }
+// // console.log(obj.obj.upanagar);
+// // obj.obj.upanagar= !true
 
+// // console.log(obj.obj.upanagar);
+
+// let arrEle = [1,2,3, obj];
+
+// arrEle[3].arrEle[3]="karnataka"
+
+// console.log(obj);
