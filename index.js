@@ -535,17 +535,17 @@
 
 // //pass by value
 
-// // function hail(val) {
-// //   val += 1;
-// //   return val;
-// // }
+// function hail(val) {
+//   val += 1;
+//   return val;
+// }
 
-// // var a = 1;
+// var a = 1;
 
-// // const outV = hail(a);
+// const outV = hail(a);
 
-// // console.log(outV);
-// // console.log(a);
+// console.log(outV);
+// console.log(a);
 
 // //pass by ref
 
@@ -959,3 +959,10 @@ obj.array[4]=null
 // arrEle[3].arrEle[3]="karnataka"
 
 // console.log(obj);
+
+
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add("2", 3));
