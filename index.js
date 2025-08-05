@@ -977,4 +977,14 @@ function findTheVowels(str){
   return count;
 }
 
-console.log(findTheVowels("tuk tuk"));
+// console.log(findTheVowels("tuk tuk"));
+
+
+// vowelArithmaticOperation(["harikalyan", "gokul", "gurumurthy", "lakshmipriya"], "+");
+
+
+// const ans = vowelArithmaticOperation(["harikalyan", "gokul", "gurumurthy", "lakshmipriya"], "+");
+
+// console.log(ans) // 13
+
+
