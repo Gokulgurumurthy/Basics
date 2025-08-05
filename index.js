@@ -961,9 +961,20 @@ obj.array[4]=null
 // console.log(obj);
 
 
-function add(a, b) {
-  return a + b;
+// function add(a, b) {
+//   return a + b;
+// }
+
+// console.log(add("2", 3));
+
+function findTheVowels(str){
+  let count = 0;
+  for(i=0;i<str.length;i++){
+    if (str[i]==="a"|| str[i]==="e" || str[i]=== "i" || str[i] === "o" || str[i] === "u"){
+      count++;
+    }
+  }
+  return count;
 }
 
-console.log(add("2", 3));
-
+console.log(findTheVowels("tuk tuk"));
