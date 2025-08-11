@@ -919,26 +919,18 @@ function findIndexVal(str, index) {
 }
 // console.log(findIndexVal("gokul", 3));
 
-
-
-
-
-
-let array = [2,3,4,false, undefined, sumOfEven,findIndexVal];
-
+let array = [2, 3, 4, false, undefined, sumOfEven, findIndexVal];
 
 let obj = {
   array,
-  findIndexVal
-}
+  findIndexVal,
+};
 // console.log(obj.array[4]);
-obj.array[4]=null
+obj.array[4] = null;
 
 // console.log(sumOfEven(10))
 // console.log(obj.array[6]("hari",1));
 // console.log(obj.findIndexVal("hari",2));
-
-
 
 // const obj = {
 //     fullName: "Harikalyan",
@@ -960,17 +952,22 @@ obj.array[4]=null
 
 // console.log(obj);
 
-
 // function add(a, b) {
 //   return a + b;
 // }
 
 // console.log(add("2", 3));
 
-function findTheVowels(str){
+function findTheVowels(str) {
   let count = 0;
-  for(i=0;i<str.length;i++){
-    if (str[i]==="a"|| str[i]==="e" || str[i]=== "i" || str[i] === "o" || str[i] === "u"){
+  for (i = 0; i < str.length; i++) {
+    if (
+      str[i] === "a" ||
+      str[i] === "e" ||
+      str[i] === "i" ||
+      str[i] === "o" ||
+      str[i] === "u"
+    ) {
       count++;
     }
   }
@@ -979,9 +976,7 @@ function findTheVowels(str){
 
 // console.log(findTheVowels("tuk tuk"));
 
-
 // vowelArithmaticOperation(["harikalyan", "gokul", "gurumurthy", "lakshmipriya"], "+");
-
 
 // const ans = vowelArithmaticOperation(["harikalyan", "gokul", "gurumurthy", "lakshmipriya"], "+");
 
@@ -992,14 +987,49 @@ function findTheVowels(str){
 // Given a string, count the number of vowels (a, e, i, o, u).
 // Example: "hello" → 2
 
-
-function countVowels(str){
+function countVowels(str) {
   let out = 0;
-  for(i=0;i<str.length;i++){
-    if (str[i]==="a"|| str[i]==="e" || str[i]=== "i" || str[i] === "o" || str[i] === "u"){
+  for (i = 0; i < str.length; i++) {
+    if (
+      str[i] === "a" ||
+      str[i] === "e" ||
+      str[i] === "i" ||
+      str[i] === "o" ||
+      str[i] === "u"
+    ) {
       out++;
     }
-  }return out;
+  }
+  return out;
 }
 
-console.log(countVowels("hello"));
+// console.log(countVowels("hello"));
+
+// -->Reverse Words in a String
+// Reverse only the words’ order, not the letters.
+// Example: "I love JS" → "JS love I"
+
+function rev(str){
+let out = "";
+  for(i>=0;i<str.length-1;i--){
+      out+=str[i]
+    
+  }return out;
+
+}
+
+
+console.log(rev("i love js"));
+
+
+function rev(str){
+    let bS = ""
+    for(let i=str.length-1 ;i>=0;i--){
+        // console.log(str[i],i)
+        bS+=str[i]
+    }
+    return bS ;
+
+}
+
+// console.log(rev("dollar"))
