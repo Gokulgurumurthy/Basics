@@ -1062,3 +1062,23 @@ function findTheVowels(str) {
 
 // }
 // console.log(withoutMod(12));
+
+
+function findTheMax(arr){
+let max = 0;
+console.log(arr.length);
+ 
+  for(i=0;i<arr.length;i++){
+    if(max < arr[i]){
+      max=arr[i]
+      // console.log(max)
+    }
+  }return max;
+}
+console.log(findTheMax([1,1,5,2]));
+
+
+function factorial(){
+
+}
+console.log(factorial(5));
