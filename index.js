@@ -1031,7 +1031,7 @@ function findTheVowels(str) {
 // console.log(rev("dollar"))
 
 
--->// Arrays
+// Arrays
 // Second Largest Number
 // Find the second largest element in an array.
 // Example: [2, 7, 4, 7, 1] → 2
