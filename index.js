@@ -1009,27 +1009,56 @@ function countVowels(str) {
 // Reverse only the words’ order, not the letters.
 // Example: "I love JS" → "JS love I"
 
-function rev(str){
-let out = "";
-  for(i>=0;i<str.length-1;i--){
-      out+=str[i]
-    
-  }return out;
-
+function rev(str) {
+  let out = "";
+  for (i >= 0; i < str.length - 1; i--) {
+    out += str[i];
+  }
+  return out;
 }
 
+// console.log(rev("i love js"));
 
-console.log(rev("i love js"));
-
-
-function rev(str){
-    let bS = ""
-    for(let i=str.length-1 ;i>=0;i--){
-        // console.log(str[i],i)
-        bS+=str[i]
-    }
-    return bS ;
-
+function rev(str) {
+  let bS = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    // console.log(str[i],i)
+    bS += str[i];
+  }
+  return bS;
 }
 
 // console.log(rev("dollar"))
+
+
+-->// Arrays
+// Second Largest Number
+// Find the second largest element in an array.
+// Example: [2, 7, 4, 7, 1] → 2
+
+// function largestNumber(val){
+//   let count = 0;
+//     for(i=0;i<=val;i++){
+
+//     }
+// }
+// console.log(largestNumber());
+
+
+
+// -->Math & Numbers
+// Divisibility Check Without %
+// Given a number n, determine if it’s divisible by 3 without using the modulo operator.
+// Example: 9 → true, 10 → false
+
+function withoutMod(val){
+  // let out  = 0;
+    for(i=0;i<20;i+=3){
+      // console.log(i);
+      if (i===val){
+        return true;
+      }
+    }return false;
+
+}
+console.log(withoutMod(12));
