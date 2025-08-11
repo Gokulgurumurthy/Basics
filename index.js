@@ -987,4 +987,19 @@ function findTheVowels(str){
 
 // console.log(ans) // 13
 
+// Strings
+// Count Vowels
+// Given a string, count the number of vowels (a, e, i, o, u).
+// Example: "hello" → 2
 
+
+function countVowels(str){
+  let out = 0;
+  for(i=0;i<str.length;i++){
+    if (str[i]==="a"|| str[i]==="e" || str[i]=== "i" || str[i] === "o" || str[i] === "u"){
+      out++;
+    }
+  }return out;
+}
+
+console.log(countVowels("hello"));
