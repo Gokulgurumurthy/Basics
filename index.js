@@ -1100,23 +1100,37 @@ function findTheVowels(str) {
 
 // console.log(fizzBuzz(15));
 
-function prime(value) {
-  if (value === null || value === undefined) return "enter a valid numeric char";
-  if (value >= 0 && value <= 2) return "Not a valid number";
-  if (value >= "a" && value <= "z") return "NAN";
-  if (typeof value === "string") return "pass a number";
+// function prime(value) {
+//   if (value === null || value === undefined) return "enter a valid numeric char";
+//   if (value >= 0 && value <= 2) return "Not a valid number";
+//   if (value >= "a" && value <= "z") return "NAN";
+//   if (typeof value === "string") return "pass a number";
 
-  let count = 0;
-  for (let i = 1; i <= value; i++) {
-    //   console.log(value%i, value , i)
-    if (value % i === 0) {
-      count++; // 1, 2
+//   let count = 0;
+//   for (let i = 1; i <= value; i++) {
+//     //   console.log(value%i, value , i)
+//     if (value % i === 0) {
+//       count++; // 1, 2
+//     }
+//   }
+//   if (count > 2) {
+//     return "Not a Prime number";
+//   }
+//   return "Prime";
+// }
+
+// console.log(prime(7));
+
+
+function prime(val){
+  let out = 0;
+    for(i=1;i<=val;i++){
+      if (value%i ===0){
+        return "not a prime";
+      }
+
     }
-  }
-  if (count > 2) {
-    return "Not a Prime number";
-  }
-  return "Prime";
+    return "prime";
 }
 
 console.log(prime(7));
