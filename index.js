@@ -1078,14 +1078,22 @@ function findTheVowels(str) {
 // console.log(findTheMax([1,1,5,2]));
 
 
-// function factorial(){
-
-// }
-// console.log(factorial(5));
 
 
-console.log("*")
-console.log("**")
-console.log("***")
-console.log("****")
 
+// console.log("*")
+// console.log("**")
+// console.log("***")
+// console.log("****")
+
+
+function factorial(num){
+  let mult = 1;
+    for(i=1;i<=num;i++){
+      mult*=i;
+      // console.log(i,num);
+      
+    }
+      return mult;
+}
+console.log(factorial(5));
