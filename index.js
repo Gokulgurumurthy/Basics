@@ -1030,7 +1030,6 @@ function findTheVowels(str) {
 
 // console.log(rev("dollar"))
 
-
 // Arrays
 // Second Largest Number
 // Find the second largest element in an array.
@@ -1043,8 +1042,6 @@ function findTheVowels(str) {
 //     }
 // }
 // console.log(largestNumber());
-
-
 
 // -->Math & Numbers
 // Divisibility Check Without %
@@ -1063,11 +1060,10 @@ function findTheVowels(str) {
 // }
 // console.log(withoutMod(12));
 
-
 // function findTheMax(arr){
 // let max = 0;
 // console.log(arr.length);
- 
+
 //   for(i=0;i<arr.length;i++){
 //     if(max < arr[i]){
 //       max=arr[i]
@@ -1077,23 +1073,50 @@ function findTheVowels(str) {
 // }
 // console.log(findTheMax([1,1,5,2]));
 
-
-
-
-
 // console.log("*")
 // console.log("**")
 // console.log("***")
 // console.log("****")
 
+// function factorial(num){
+//   let mult = 1;
+//     for(i=1;i<=num;i++){
+//       mult*=i;
+//       // console.log(i,num);
 
-function factorial(num){
-  let mult = 1;
-    for(i=1;i<=num;i++){
-      mult*=i;
-      // console.log(i,num);
-      
+//     }
+//       return mult;
+// }
+// console.log(factorial(5));
+
+// Logic & Loops
+// FizzBuzz Variation
+// Print numbers from 1 to N, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for both print "FizzBuzz
+
+
+// function fizzBuzz(val){
+
+// }
+
+// console.log(fizzBuzz(15));
+
+function prime(value) {
+  if (value === null || value === undefined) return "enter a valid numeric char";
+  if (value >= 0 && value <= 2) return "Not a valid number";
+  if (value >= "a" && value <= "z") return "NAN";
+  if (typeof value === "string") return "pass a number";
+
+  let count = 0;
+  for (let i = 1; i <= value; i++) {
+    //   console.log(value%i, value , i)
+    if (value % i === 0) {
+      count++; // 1, 2
     }
-      return mult;
+  }
+  if (count > 2) {
+    return "Not a Prime number";
+  }
+  return "Prime";
 }
-console.log(factorial(5));
+
+console.log(prime(7));
