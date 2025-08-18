@@ -1163,15 +1163,34 @@ function findTheVowels(str) {
   
 // console.log(fizzBuzz(7));
 
-function rightAngleTriangle(){
-    for(let  i = 1; i<=5; i++){
-        let starRow = "";
-        for(let j = 1; j<=i; j++){
-            starRow+= "*"
-        }
-        console.log(starRow);
+// function rightAngleTriangle(){
+//     for(let  i = 1; i<=5; i++){
+//         let starRow = "";
+//         for(let j = 1; j<=i; j++){
+//             starRow+= "*"
+//         }
+//         console.log(starRow);
+//     }
+// }
+
+
+// rightAngleTriangle();
+
+
+// Check Palindrome String
+// Input: "madam" → Output: true.
+
+function pal(str){
+  let emptyStr = ""
+    for(let i=str.length-1;i>=0;i--){
+      emptyStr+=str[i];
+    }
+    if (emptyStr===str){
+      return "its an palindrome";
+    }
+    else {
+      return "not a palindrome";
     }
 }
 
-
-rightAngleTriangle();
+console.log(pal("madam"));
