@@ -1093,7 +1093,6 @@ function findTheVowels(str) {
 // FizzBuzz Variation
 // Print numbers from 1 to N, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for both print "FizzBuzz
 
-
 // function fizzBuzz(val){
 
 // }
@@ -1121,16 +1120,18 @@ function findTheVowels(str) {
 
 // console.log(prime(7));
 
-
-function prime(val){
+function prime(val) {
   let out = 0;
-    for(i=1;i<=val;i++){
-      if (value%i ===0){
-        return "not a prime";
-      }
-
+  for (i = 1; i <= val; i++) {
+    if (val % i === 0) {
+      out++;
     }
+  }
+  if (out === 2){
     return "prime";
+  }else {
+    return "not a prime number"
+  }
 }
 
-console.log(prime(7));
+console.log(prime(15));
