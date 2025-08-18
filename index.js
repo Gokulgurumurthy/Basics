@@ -1089,15 +1089,7 @@ function findTheVowels(str) {
 // }
 // console.log(factorial(5));
 
-// Logic & Loops
-// FizzBuzz Variation
-// Print numbers from 1 to N, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for both print "FizzBuzz
 
-// function fizzBuzz(val){
-
-// }
-
-// console.log(fizzBuzz(15));
 
 // function prime(value) {
 //   if (value === null || value === undefined) return "enter a valid numeric char";
@@ -1136,19 +1128,37 @@ function findTheVowels(str) {
 
 // console.log(prime(15));
 
-function prime(val) {
-  let out = 0;
-  for (i = 1; i <= val; i++) {
-    if (val % i === 0) {
-      out++;
-    }
-  }
-  if (out > 2){
-    return "composite number";
+// function prime(val) {
+//   let out = 0;
+//   for (i = 1; i <= val; i++) {
+//     if (val % i === 0) {
+//       out++;
+//     }
+//   }
+//   if (out > 2){
+//     return "composite number";
+//   }else {
+//     return "Prime number"
+//   }
+// }
+
+// console.log(prime(7));
+
+
+// Logic & Loops
+// FizzBuzz Variation
+// Print numbers from 1 to N, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for both print "FizzBuzz
+
+function fizzBuzz(val){
+   if (val%3 === 0 && val%5===0){
+    return "fizzBuzz"
+  }else if (val%3===0){
+    return "fizz";
+  }else if (val%5===0){
+    return "buzz";
   }else {
-    return "Prime number"
+    return val;
   }
 }
-
-console.log(prime(7));
-
+  
+console.log(fizzBuzz(7));
