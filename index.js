@@ -1120,6 +1120,22 @@ function findTheVowels(str) {
 
 // console.log(prime(7));
 
+// function prime(val) {
+//   let out = 0;
+//   for (i = 1; i <= val; i++) {
+//     if (val % i === 0) {
+//       out++;
+//     }
+//   }
+//   if (out === 2){
+//     return "prime";
+//   }else {
+//     return "not a prime number"
+//   }
+// }
+
+// console.log(prime(15));
+
 function prime(val) {
   let out = 0;
   for (i = 1; i <= val; i++) {
@@ -1127,11 +1143,12 @@ function prime(val) {
       out++;
     }
   }
-  if (out === 2){
-    return "prime";
+  if (out > 2){
+    return "composite number";
   }else {
-    return "not a prime number"
+    return "Prime number"
   }
 }
 
-console.log(prime(15));
+console.log(prime(7));
+
