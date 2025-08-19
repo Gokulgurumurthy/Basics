@@ -1206,4 +1206,23 @@ function leapYear(year){
     return "not a leap year"
   }
 }
-console.log(leapYear(2025));
+// console.log(leapYear(2000));
+
+
+function vowelCount(str){
+
+}
+
+function findMaxedVowels(str1, str2){
+
+}
+
+
+// findMaxedVowels("hello") // output => gokul gurumurthy
+console.log(findMaxedVowels("hello", "gokul gurumurthy"));
+
+
+
+
+
+// function reverseStr(){}
