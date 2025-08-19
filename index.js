@@ -1223,8 +1223,10 @@ function findMaxedVowels(str1, str2, str3){
   if(vowelCount (str1)>vowelCount(str2)){
     return str1;
   }
-  else {
+  else if(vowelCount(str2)>vowelCount(str3)){
     return str2;
+  }else if(vowelCount(str3)>vowelCount(str1)){
+    return str3;
   }
 }
 
