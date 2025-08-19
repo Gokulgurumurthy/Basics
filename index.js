@@ -1210,16 +1210,27 @@ function leapYear(year){
 
 
 function vowelCount(str){
-
+  let out = 0;
+    for(i=0;i<str.length;i++){
+      if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u"){
+        out++
+      }
+    }return out;
 }
 
-function findMaxedVowels(str1, str2){
-
+function findMaxedVowels(str1, str2, str3){
+  console.log(vowelCount(str1),vowelCount(str2),vowelCount(str3));
+  if(vowelCount (str1)>vowelCount(str2)){
+    return str1;
+  }
+  else {
+    return str2;
+  }
 }
 
 
 // findMaxedVowels("hello") // output => gokul gurumurthy
-console.log(findMaxedVowels("hello", "gokul gurumurthy"));
+console.log(findMaxedVowels("hello", "gokul gurumurthy","hari kalyan balaji"));
 
 
 
