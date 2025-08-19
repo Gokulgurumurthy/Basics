@@ -1180,17 +1180,30 @@ function findTheVowels(str) {
 // Check Palindrome String
 // Input: "madam" → Output: true.
 
-function pal(str){
-  let emptyStr = ""
-    for(let i=str.length-1;i>=0;i--){
-      emptyStr+=str[i];
-    }
-    if (emptyStr===str){
-      return "its an palindrome";
-    }
-    else {
-      return "not a palindrome";
-    }
-}
+// function pal(str){
+//   let emptyStr = ""
+//     for(let i=str.length-1;i>=0;i--){
+//       emptyStr+=str[i];
+//     }
+//     if (emptyStr===str){
+//       return "its an palindrome";
+//     }
+//     else {
+//       return "not a palindrome";
+//     }
+// }
 
-console.log(pal("madam"));
+// console.log(pal("madam"));
+
+
+function leapYear(year){
+  if(year%4 ===0 && year%100 != 0){
+    return "leap year"
+  }else if(year%400 === 0){
+    return "leap year"
+  }
+  else {
+    return "not a leap year"
+  }
+}
+console.log(leapYear(2025));
