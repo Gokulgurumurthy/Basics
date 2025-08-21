@@ -1238,4 +1238,11 @@ console.log(findMaxedVowels("hello", "gokul gurumurthy","hari kalyan balaji"));
 
 
 
-// function reverseStr(){}
+function reverseStr(str){
+  let emtystr = "";
+    for(let i=str.length-1;i>=0;i--){
+      emtystr+=str[i];
+    }
+    return emtystr;
+}
+console.log(reverseStr("gokul gurumurthy"));
