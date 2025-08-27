@@ -1232,7 +1232,7 @@ function findMaxedVowels(str1, str2, str3){
 
 
 // findMaxedVowels("hello") // output => gokul gurumurthy
-console.log(findMaxedVowels("hello", "gokul gurumurthy","hari kalyan balaji"));
+// console.log(findMaxedVowels("hello", "gokul gurumurthy","hari kalyan balaji"));
 
 
 
@@ -1245,4 +1245,52 @@ function reverseStr(str){
     }
     return emtystr;
 }
-console.log(reverseStr("gokul gurumurthy"));
+// console.log(reverseStr("gokul gurumurthy"));
+
+// function revStr(str){
+//     let emptyStr = "";
+//         for(i=str.length-1;i>=0;i--){
+//             emptyStr+=str[i];
+//         }
+//         return emptyStr
+// }
+// console.log(revStr("gokul"));
+
+function palindrome(str) {
+  let emptyStr = "";
+  for (i = str.length - 1; i >= 0; i--) {
+    emptyStr += str[i];
+  }
+  if (emptyStr === str) {
+    return "its a palindrome";
+  } else {
+    return "Not a palindrome";
+  }
+}
+// console.log(palindrome("jhvghnchvvhvvvvvhj"));
+
+function revArr(arr) {
+  let emptyArr = [];
+  for (i = arr.length - 1; i >= 0; i--) {
+    emptyArr.push(arr[i]);
+  }
+
+  return emptyArr;
+}
+// console.log(revArr([1,2,3]));
+
+function panGramWithNoDuplicates(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") {
+      if (str[i] >= "a" && str[i] <= "z") {
+        count++
+        
+      } 
+    }
+  }
+  return count === 26 ? "is pangram" : "is not pangram";
+}
+console.log(panGramWithNoDuplicates("abcdefg  hijklmn   opqrstuvwxyz"));
+
+
