@@ -1006,12 +1006,12 @@ function findTheVowels(str) {
 // console.log(countVowels("hello"));
 
 // -->Reverse Words in a String
-// Reverse only the words’ order, not the letters.
-// Example: "I love JS" → "JS love I"
+// // Reverse only the words’ order, not the letters.
+// // Example: "I love JS" → "JS love I"
 
 // function rev(str) {
 //   let out = "";
-//   for (i >= 0; i < str.length - 1; i--) {
+//   for (let i = str.length - 1;i>=0; i--) {
 //     out += str[i];
 //   }
 //   return out;
@@ -1291,6 +1291,43 @@ function panGramWithNoDuplicates(str) {
   }
   return count === 26 ? "is pangram" : "is not pangram";
 }
-console.log(panGramWithNoDuplicates("abcdefg  hijklmn   opqrstuvwxyz"));
+// console.log(panGramWithNoDuplicates("abcdefg  hijklmn   opqrstuvwxyz"));
+
+//string methods => primitive => pass by value
+// inbuilt functions
+
+let str = "hello my name is gokul";
+
+console.log(str.length);// gives the length of the str in numbers
+console.log(str.trim());//trims the spaces in starting and ending of the string
+console.log(str.trim().concat(str));//concates the string 
+console.log(str.trim().split(' '));
+console.log(str.charAt(str.length-1));
+console.log(str.trim().split(" ").reverse().join(" "));
+console.log(str.trim().charCodeAt(5));//determines the ascii table or computer number format 
+console.log(str.indexOf("l"));
+console.log(str.lastIndexOf("l"));
+console.log(str.substring(5));
+console.log(str.slice(5));
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+
+
+
+function myLastIndexOf(char){
+  for(let i=str.length-1;i>=0;i--){
+    if (str[i] === char){
+      return i;
+    }
+  }
+  return -1;
+}
+console.log(str.lastIndexOf("o"),myLastIndexOf("o"));
+
+
+
+
+
 
 
