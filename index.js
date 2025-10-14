@@ -1398,67 +1398,19 @@
 // // // console.log(obj1.uername);
 // // // console.log(obj1);
 
-// // function obje(details){
-// //     details.uername = "guru"
-// //     console.log(details);
+// function obje(details){
+//     details.uername = "guru"
+//     console.log(details);
 
-// // }
+// }
 
-// // obje(obj1);
+// obje(obj1);
 
-// const data = [
-//   {
-//     1: "gurumurthy",
-//     "D-O-B": {
-//       month: "feb",
-//       date: 5,
-//       year: 2000,
-//     },
-//   },
-//   {
-//     2: "gokul",
-//     "D-O-B": {
-//       month: "march",
-//       date: 5,
-//       year: 2000,
-//     },
-//   },
-//   {
-//     3: "shylaja",
-//     "D-O-B": {
-//       month: "nov",
-//       date: 5,
-//       year: 2000,
-//     },
-//   },
-//   {
-//     4: "ashwin",
-//     "D-O-B": {
-//       month: "sep",
-//       date: 5,
-//       year: 2000,
-//     },
-//   },
-//   {
-//     5: "gokul gurumurthy",
-//     "D-O-B": {
-//       month: "febmarch",
-//       date: 5,
-//       year: 2000,
-//     },
-//   },
-// ];
 
-// // console.log("my name is gokul "+ obj2[1] + " I was born on " + obj2["D-O-B"].date +"th "+ obj2["D-O-B"].month + " "+ obj2["D-O-B"].year);
-// // console.log(`my name is gokul ${obj2[1]} I was born on ${obj2["D-O-B"].date}th ${obj2["D-O-B"].month} ${obj2["D-O-B"].year}`);
 
-// // function peopleData(data){
-// //     for(let i=0;i<data.length;i++){
-// //         console.log(`my name is ${data[i][i+1]} I was born on ${data[i]["D-O-B"].date}th ${data[i]["D-O-B"].month} ${data[i]["D-O-B"].year}`);
-// //     }
-// //     return true;
-// // }
-// // console.log(peopleData(data));
+
+
+
 
 // // Pass by value
 
@@ -1515,11 +1467,71 @@
 // modify(person);
 // console.log(person.name); // Output: "Alice"
 
-function replace(obj) {
-  obj = { name: "Charlie" };
+// function replace(obj) {
+//   obj = { name: "Charlie" };
+// }
+
+// let person = { name: "Bob" };
+// replace(person);
+// console.log(person.name); // Output: "Bob"
+
+
+
+
+// Shallow copy
+
+// copying only the top level properties, if property is a reference the reference is copied not the actual data
+
+const data = [
+  {
+    1: "gurumurthy",
+    "D-O-B": {
+      month: "feb",
+      date: 5,
+      year: 2000,
+    },
+  },
+  {
+    2: "gokul",
+    "D-O-B": {
+      month: "march",
+      date: 5,
+      year: 2000,
+    },
+  },
+  {
+    3: "shylaja",
+    "D-O-B": {
+      month: "nov",
+      date: 5,
+      year: 2000,
+    },
+  },
+  {
+    4: "ashwin",
+    "D-O-B": {
+      month: "sep",
+      date: 5,
+      year: 2000,
+    },
+  },
+  {
+    5: "gokul gurumurthy",
+    "D-O-B": {
+      month: "febmarch",
+      date: 5,
+      year: 2000,
+    },
+  },
+];
+// console.log("my name is gokul "+ obj2[1] + " I was born on " + obj2["D-O-B"].date +"th "+ obj2["D-O-B"].month + " "+ obj2["D-O-B"].year);
+// console.log(`my name is gokul ${obj2[1]} I was born on ${obj2["D-O-B"].date}th ${obj2["D-O-B"].month} ${obj2["D-O-B"].year}`);
+
+
+function peopleData(data){
+    for(let i=0;i<data.length;i++){
+        console.log(`my name is ${data[i][i+1]} I was born on ${data[i]["D-O-B"].date}th ${data[i]["D-O-B"].month} ${data[i]["D-O-B"].year}`);
+    }
+    return true;
 }
-
-let person = { name: "Bob" };
-replace(person);
-console.log(person.name); // Output: "Bob"
-
+console.log(peopleData(data));
