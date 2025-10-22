@@ -1615,3 +1615,21 @@ objCopy[0]["D-O-B"].time.seconds= "01"
 let obj2 = objCopy
 obj2[0]["D-O-B"].time.seconds = "09"
 // console.log(obj[0],objCopy[0],obj2[0]);
+
+// Create an array, add all the primitives and non-primitives
+
+let arr = [2,"gokul",true,null,undefined,[1,2,3],{name:"gokul",age:25},function greet() {return "good morning"}]
+
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr[3]);
+console.log(arr[4]);
+console.log(arr[5]);
+console.log(arr[6]);
+console.log(arr[7]);
+
+console.log(arr[7]());
+
+
+
