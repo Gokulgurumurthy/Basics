@@ -1089,8 +1089,6 @@
 // // }
 // // console.log(factorial(5));
 
-
-
 // // function prime(value) {
 // //   if (value === null || value === undefined) return "enter a valid numeric char";
 // //   if (value >= 0 && value <= 2) return "Not a valid number";
@@ -1144,7 +1142,6 @@
 
 // // console.log(prime(7));
 
-
 // // Logic & Loops
 // // FizzBuzz Variation
 // // Print numbers from 1 to N, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for both print "FizzBuzz
@@ -1160,7 +1157,7 @@
 // //     return val;
 // //   }
 // // }
-  
+
 // // console.log(fizzBuzz(7));
 
 // // function rightAngleTriangle(){
@@ -1173,9 +1170,7 @@
 // //     }
 // // }
 
-
 // // rightAngleTriangle();
-
 
 // // Check Palindrome String
 // // Input: "madam" → Output: true.
@@ -1195,7 +1190,6 @@
 
 // // console.log(pal("madam"));
 
-
 // function leapYear(year){
 //   if(year%4 ===0 && year%100 != 0){
 //     return "leap year"
@@ -1207,7 +1201,6 @@
 //   }
 // }
 // // console.log(leapYear(2000));
-
 
 // function vowelCount(str){
 //   let out = 0;
@@ -1230,13 +1223,8 @@
 //   }
 // }
 
-
 // // findMaxedVowels("hello") // output => gokul gurumurthy
 // // console.log(findMaxedVowels("hello", "gokul gurumurthy","hari kalyan balaji"));
-
-
-
-
 
 // function reverseStr(str){
 //   let emtystr = "";
@@ -1285,8 +1273,8 @@
 //     if (str[i] !== " ") {
 //       if (str[i] >= "a" && str[i] <= "z") {
 //         count++
-        
-//       } 
+
+//       }
 //     }
 //   }
 //   return count === 26 ? "is pangram" : "is not pangram";
@@ -1300,20 +1288,17 @@
 
 // console.log(str.length);// gives the length of the str in numbers
 // console.log(str.trim());//trims the spaces in starting and ending of the string
-// console.log(str.trim().concat(str));//concates the string 
+// console.log(str.trim().concat(str));//concates the string
 // console.log(str.trim().split(' '));
 // console.log(str.charAt(str.length-1));
 // console.log(str.trim().split(" ").reverse().join(" "));
-// console.log(str.trim().charCodeAt(5));//determines the ascii table or computer number format 
+// console.log(str.trim().charCodeAt(5));//determines the ascii table or computer number format
 // console.log(str.indexOf("l"));
 // console.log(str.lastIndexOf("l"));
 // console.log(str.substring(5));
 // console.log(str.slice(5));
 // console.log(str.toUpperCase());
 // console.log(str.toLowerCase());
-
-
-
 
 // function myLastIndexOf(char){
 //   for(let i=str.length-1;i>=0;i--){
@@ -1330,14 +1315,9 @@
 //     for (let i=0;i=str.length;i++){
 //       out+=str[i];
 //     }
-//     return out; 
+//     return out;
 // }
 // console.log(sTrim("    hello world"));
-
-
-
-
-
 
 // // // // console.log("gokulgurumurthy");
 
@@ -1406,12 +1386,6 @@
 
 // obje(obj1);
 
-
-
-
-
-
-
 // // Pass by value
 
 // let a1 = 1;
@@ -1439,12 +1413,9 @@
 // };
 
 // let obj2 = obj1;
-  
+
 // obj2.id=2;
 // obj1.user.fullName = "gokulgurumurthy"
-
-
-
 
 // let obj3 = {...obj1}
 // obj3.id= 9
@@ -1458,7 +1429,7 @@
 // function modify(obj) {
 //   obj.name = "Alice";
 //   console.log(obj.name);
-  
+
 // }
 
 // let person = { name: "Bob" };
@@ -1474,9 +1445,6 @@
 // let person = { name: "Bob" };
 // replace(person);
 // console.log(person.name); // Output: "Bob"
-
-
-
 
 // Shallow copy
 
@@ -1527,11 +1495,70 @@ const data = [
 // console.log("my name is gokul "+ obj2[1] + " I was born on " + obj2["D-O-B"].date +"th "+ obj2["D-O-B"].month + " "+ obj2["D-O-B"].year);
 // console.log(`my name is gokul ${obj2[1]} I was born on ${obj2["D-O-B"].date}th ${obj2["D-O-B"].month} ${obj2["D-O-B"].year}`);
 
-
-function peopleData(data){
-    for(let i=0;i<data.length;i++){
-        console.log(`my name is ${data[i][i+1]} I was born on ${data[i]["D-O-B"].date}th ${data[i]["D-O-B"].month} ${data[i]["D-O-B"].year}`);
-    }
-    return true;
+function peopleData(data) {
+  for (let i = 0; i < data.length; i++) {
+    console.log(
+      `my name is ${data[i][i + 1]} I was born on ${data[i]["D-O-B"].date}th ${
+        data[i]["D-O-B"].month
+      } ${data[i]["D-O-B"].year}`
+    );
+  }
+  return true;
 }
-console.log(peopleData(data));
+// console.log(peopleData(data));
+
+// Create an object with five entries, keep it nested to 2 down. (obj)use this object to spread into a new objcopy (
+// now modify the obj and check whether the objCopy is also changed if yes why?
+// now take this objCopy and copy the instance into an object 2 (obj2) now if you modify this,   will the spreaded objCopy change? if yes why, no justify?
+
+let obj = [
+  {
+    1: "gurumurthy",
+    "D-O-B": {
+      month: "feb",
+      date: 5,
+      year: 2000,
+      time: { hour: "12", minute: "30", seconds: "02" },
+    },
+  },
+  {
+    2: "gokul",
+    "D-O-B": {
+      month: "march",
+      date: 5,
+      year: 2000,
+    },
+  },
+  {
+    3: "shylaja",
+    "D-O-B": {
+      month: "nov",
+      date: 5,
+      year: 2000,
+    },
+  },
+  {
+    4: "ashwin",
+    "D-O-B": {
+      month: "sep",
+      date: 5,
+      year: 2000,
+    },
+  },
+  {
+    5: "gokul gurumurthy",
+    "D-O-B": {
+      month: "febmarch",
+      date: 5,
+      year: 2000,
+    },
+  },
+];
+
+let objCopy = {...obj}
+objCopy[0]["D-O-B"].time.seconds= "01"
+// console.log(obj[0],objCopy[0]);// both the values changes because shallow copy is somthing that changes the top level properties 
+
+let obj2 = objCopy
+obj2[0]["D-O-B"].time.seconds = "09"
+// console.log(obj[0],objCopy[0],obj2[0]);//sAME here values changes for all the three 
