@@ -1511,9 +1511,62 @@ function peopleData(data) {
 // now modify the obj and check whether the objCopy is also changed if yes why?
 // now take this objCopy and copy the instance into an object 2 (obj2) now if you modify this,   will the spreaded objCopy change? if yes why, no justify?
 
+// let obj = [
+//   {
+//     1: "gurumurthy",
+//     "D-O-B": {
+//       month: "feb",
+//       date: 5,
+//       year: 2000,
+//       time: { hour: "12", minute: "30", seconds: "02" },
+//     },
+//   },
+//   {
+//     2: "gokul",
+//     "D-O-B": {
+//       month: "march",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+//   {
+//     3: "shylaja",
+//     "D-O-B": {
+//       month: "nov",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+//   {
+//     4: "ashwin",
+//     "D-O-B": {
+//       month: "sep",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+//   {
+//     5: "gokul gurumurthy",
+//     "D-O-B": {
+//       month: "febmarch",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+// ];
+
+// let objCopy = {...obj}
+// objCopy[0]["D-O-B"].time.seconds= "01"
+// // console.log(obj[0],objCopy[0]);// both the values changes because shallow copy is somthing that changes the top level properties 
+
+// let obj2 = objCopy
+// obj2[0]["D-O-B"].time.seconds = "09"
+// // console.log(obj[0],objCopy[0],obj2[0]);//sAME here values changes for all the three 
+
+
 let obj = [
   {
-    1: "gurumurthy",
+    name: "gurumurthy",
     "D-O-B": {
       month: "feb",
       date: 5,
@@ -1522,7 +1575,7 @@ let obj = [
     },
   },
   {
-    2: "gokul",
+    name: "gokul",
     "D-O-B": {
       month: "march",
       date: 5,
@@ -1530,7 +1583,7 @@ let obj = [
     },
   },
   {
-    3: "shylaja",
+    name: "shylaja",
     "D-O-B": {
       month: "nov",
       date: 5,
@@ -1538,7 +1591,7 @@ let obj = [
     },
   },
   {
-    4: "ashwin",
+    name: "ashwin",
     "D-O-B": {
       month: "sep",
       date: 5,
@@ -1546,7 +1599,7 @@ let obj = [
     },
   },
   {
-    5: "gokul gurumurthy",
+    name: "gokul gurumurthy",
     "D-O-B": {
       month: "febmarch",
       date: 5,
@@ -1557,8 +1610,8 @@ let obj = [
 
 let objCopy = {...obj}
 objCopy[0]["D-O-B"].time.seconds= "01"
-// console.log(obj[0],objCopy[0]);// both the values changes because shallow copy is somthing that changes the top level properties 
+// console.log(obj[0],objCopy[0]); 
 
 let obj2 = objCopy
 obj2[0]["D-O-B"].time.seconds = "09"
-// console.log(obj[0],objCopy[0],obj2[0]);//sAME here values changes for all the three 
+// console.log(obj[0],objCopy[0],obj2[0]);
