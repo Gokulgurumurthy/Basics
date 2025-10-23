@@ -1564,72 +1564,72 @@ function peopleData(data) {
 // // console.log(obj[0],objCopy[0],obj2[0]);//sAME here values changes for all the three 
 
 
-let obj = [
-  {
-    name: "gurumurthy",
-    "D-O-B": {
-      month: "feb",
-      date: 5,
-      year: 2000,
-      time: { hour: "12", minute: "30", seconds: "02" },
-    },
-  },
-  {
-    name: "gokul",
-    "D-O-B": {
-      month: "march",
-      date: 5,
-      year: 2000,
-    },
-  },
-  {
-    name: "shylaja",
-    "D-O-B": {
-      month: "nov",
-      date: 5,
-      year: 2000,
-    },
-  },
-  {
-    name: "ashwin",
-    "D-O-B": {
-      month: "sep",
-      date: 5,
-      year: 2000,
-    },
-  },
-  {
-    name: "gokul gurumurthy",
-    "D-O-B": {
-      month: "febmarch",
-      date: 5,
-      year: 2000,
-    },
-  },
-];
 
-let objCopy = {...obj}
-objCopy[0]["D-O-B"].time.seconds= "01"
-// console.log(obj[0],objCopy[0]); 
+// let obj = [
+//   {
+//     name: "gurumurthy",
+//     "D-O-B": {
+//       month: "feb",
+//       date: 5,
+//       year: 2000,
+//       time: { hour: "12", minute: "30", seconds: "02" },
+//     },
+//   },
+//   {
+//     name: "gokul",
+//     "D-O-B": {
+//       month: "march",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+//   {
+//     name: "shylaja",
+//     "D-O-B": {
+//       month: "nov",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+//   {
+//     name: "ashwin",
+//     "D-O-B": {
+//       month: "sep",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+//   {
+//     name: "gokul gurumurthy",
+//     "D-O-B": {
+//       month: "febmarch",
+//       date: 5,
+//       year: 2000,
+//     },
+//   },
+// ];
 
-let obj2 = objCopy
-obj2[0]["D-O-B"].time.seconds = "09"
-// console.log(obj[0],objCopy[0],obj2[0]);
+// let objCopy = {...obj}
+// objCopy[0]["D-O-B"].time.seconds= "01"
+// // console.log(obj[0],objCopy[0]); 
 
-// Create an array, add all the primitives and non-primitives
+// let obj2 = objCopy
+// obj2[0]["D-O-B"].time.seconds = "09"
+// // console.log(obj[0],objCopy[0],obj2[0]);
 
-let arr = [2,"gokul",true,null,undefined,[1,2,3],{name:"gokul",age:25},function greet() {return "good morning"}]
+// // Create an array, add all the primitives and non-primitives
 
-console.log(arr[0]);
-console.log(arr[1]);
-console.log(arr[2]);
-console.log(arr[3]);
-console.log(arr[4]);
-console.log(arr[5]);
-console.log(arr[6]);
-console.log(arr[7]);
+// let arr = [2,"gokul",true,null,undefined,[1,2,3],{name:"gokul",age:25},function greet() {return "good morning"}]
 
-console.log(arr[7]());
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+// console.log(arr[3]);
+// console.log(arr[4]);
+// console.log(arr[5]);
+// console.log(arr[6]);
+// console.log(arr[7]);
 
+// console.log(arr[7]());
 
 
