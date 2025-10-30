@@ -1633,3 +1633,24 @@ function peopleData(data) {
 // console.log(arr[7]());
 
 
+// Extract the first and third elements from an array [1, 2, 3, 4, 5].
+
+// Destructure a nested array [10, [20, 30]] to get 10 and 30 into variables.
+
+// Use default values while destructuring an array ["red"] so the second color defaults to "blue".
+
+// Use the rest operator to extract the first element and collect the remaining ones in another array.
+
+// Destructure an array returned by a function to get multiple return values.
+
+// Skip the second element of an array while destructuring.
+
+
+let arr = [1,2,3,4,5]
+let first = arr[0];
+let second = arr[1];
+let third = arr[2];
+let fourth = arr[3];
+let fifth = arr[4]
+
+console.log(first,third);
