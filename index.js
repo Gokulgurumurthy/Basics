@@ -1639,7 +1639,6 @@ function peopleData(data) {
 
 // Use default values while destructuring an array ["red"] so the second color defaults to "blue".
 
-// Use the rest operator to extract the first element and collect the remaining ones in another array.
 
 // Destructure an array returned by a function to get multiple return values.
 
@@ -1677,3 +1676,14 @@ let colour = ["red"] ;
 let[firstColour,secondColour = "blue"] = colour;
 
 console.log(firstColour,secondColour);
+
+// Use the rest operator to extract the first element and collect the remaining ones in another array.
+
+let numbers = [10,20,30,40,50]
+
+let [firstNumber,...restNumbers] = numbers;
+
+console.log(firstNumber);
+console.log(restNumbers);
+
+
