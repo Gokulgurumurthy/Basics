@@ -1670,3 +1670,10 @@ let[first1,[firtOfFirst,firstOfSecond]] = arr1;
 
 console.log(first1,firstOfSecond);
 
+// Use default values while destructuring an array ["red"] so the second color defaults to "blue".
+
+let colour = ["red"] ;
+
+let[firstColour,secondColour = "blue"] = colour;
+
+console.log(firstColour,secondColour);
