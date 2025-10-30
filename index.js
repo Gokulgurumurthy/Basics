@@ -1640,7 +1640,6 @@ function peopleData(data) {
 // Use default values while destructuring an array ["red"] so the second color defaults to "blue".
 
 
-// Destructure an array returned by a function to get multiple return values.
 
 // Skip the second element of an array while destructuring.
 
@@ -1686,4 +1685,5 @@ let [firstNumber,...restNumbers] = numbers;
 console.log(firstNumber);
 console.log(restNumbers);
 
+// Destructure an array returned by a function to get multiple return values.
 
