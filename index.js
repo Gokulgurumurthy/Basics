@@ -1687,3 +1687,14 @@ console.log(restNumbers);
 
 // Destructure an array returned by a function to get multiple return values.
 
+// Create a function which can count n numbers, example: if n = 10, then count 1-10 => 1+2+3+4....
+// execute in different kinds of function declarations. (iife, arrow, regular, etc..)
+
+function countSum(n){
+  let sum = 0;
+  for(let i=0;i<=n;i++){
+    sum+=i;
+  }
+  return sum
+}
+console.log(countSum(10));
